@@ -2,16 +2,15 @@ function agregaLista(){
 	//elementos que tenemos 
 	var lista = document.getElementById('agregar');
 	//elementos nuevos que creamos
-	var contenido = document.createElement('form');
+	var contenido = document.createElement('div');
 	var input = document.createElement('input');
 	var boton = document.createElement('button');
     //texto del boton
-	boton.setAttribute ('type','submit');
+	boton.setAttribute ('type','button');
 	//colocamos texto y atributo en boton
 	var textboton = document.createTextNode('Guardar');
 	boton.appendChild(textboton);
 	boton.setAttribute("class","btn-default");
-		contenido.setAttribute("onsubmit", "return guardar();");
 		//unir al form con sus elementos input y boton
 		contenido.appendChild(input);
 		contenido.appendChild(boton);
@@ -21,7 +20,7 @@ function agregaLista(){
 
 function guardar(){
 	var lista= document.getElementById('agregar')
-	var digitar = document.getElementByTagName('input')[0].value;
+	var escribir = document.getElementByTagName('input')[0].value;
 	var nodoescribir = document.createTextNode(escribir);
 
 	var inputext = document.createElement('p');
