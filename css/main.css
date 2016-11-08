@@ -1,3 +1,22 @@
-#add {
+* {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	background-color:#D07EEE;
+	margin: auto;
+    padding: 15px;
+    height: 90px;
+	font-family: 'Shrikhand', cursive;
+	color: white;
+	font-size: 50px;
+	
+}
+.lista {
+	margin: 20px 45px;
+}
+
+#agregar {
 	margin-top: 10px;
+	margin-left: 3px;
 }
